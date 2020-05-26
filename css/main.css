@@ -1,0 +1,45 @@
+body {
+    background: #E8E8E8;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#vision-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('../img/background.png');
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    /* vertical-align: middle; */
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+.small-block {
+    height: 210px;
+}
+
+.large-block {
+    height: 430px;
+}
+
+.block:nth-of-type(3),
+.block:nth-of-type(5),
+.block:nth-of-type(7) {
+    text-align: center;
+}
+
+.block:nth-of-type(6),
+.block:nth-of-type(9) {
+    text-align: right;
+}
